@@ -62,7 +62,9 @@
           <div class="hero-container">
             <h1 class="hero-title">Effective Solutions for Your Business</h1>
 
-            <button type="button" class="button-hero">Order Service</button>
+            <button data-modal-open type="button" class="button-hero">
+              Order Service
+            </button>
           </div>
         </div>
       </section>
@@ -255,12 +257,12 @@
             <li class="team-card list">
               <img
                 src="./images/img-1.jpg"
-                alt="photo Camila Garcia "
+                alt="photo Camilla Garcia "
                 width="264"
                 height="260"
               />
               <div class="about-team">
-                <h3 class="team-after-title">Camila Garcia</h3>
+                <h3 class="team-after-title">Camilla Garcia</h3>
                 <p class="team-text">Marketing</p>
                 <ul class="team-soc-list list">
                   <li class="team-soc-icon">
@@ -450,5 +452,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button data-modal-close type="button" class="modal-close">
+          <svg class="modal-close-icon" width="8px" height="8px">
+            <use href="./images/sprite.svg#icon-close-black"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
